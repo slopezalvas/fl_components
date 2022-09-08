@@ -12,16 +12,17 @@ class ListView1Screen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Listview Tipo 1'),
       ),
-      body: ListView(
+      body: ListView (
         children: [
 
           ...options.map((e) => ListTile(
             title: Text(e),
             trailing: const Icon(Icons.arrow_forward_ios),
             )
-          ).toList()
+          ).toList(),
 
           
+
         ],
       )
     );
