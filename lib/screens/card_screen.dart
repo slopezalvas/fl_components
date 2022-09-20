@@ -17,8 +17,13 @@ class CardScreen extends StatelessWidget {
         children: const [
 
           CustomCardType1(),
-          SizedBox(height: 10,),
-          CustomCardType2()
+          SizedBox(height: 20,),
+          CustomCardType2(name: 'Paisaje 1',imageUrl: 'https://mymodernmet.com/wp/wp-content/uploads/2022/02/international-landscape-photographer-awards-20.jpeg',),
+          SizedBox(height: 20,),
+          CustomCardType2(imageUrl: 'https://www.nationalgeographic.com.es/medio/2018/02/27/playa-de-isuntza-lekeitio__1280x720.jpg',),
+          SizedBox(height: 20,),
+          CustomCardType2(imageUrl: 'https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg?w=2000',),
+          SizedBox(height: 100,),
         ],
       )
     );
