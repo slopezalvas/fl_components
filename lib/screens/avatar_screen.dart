@@ -12,14 +12,18 @@ class AvatarScreen extends StatelessWidget {
         actions: [
           Container(
             margin: const EdgeInsets.only( right:  5),
-            child: const CircleAvatar(
-              child:  Text('SL'),
+            child:  CircleAvatar(
+              backgroundColor: Colors.amber[900],
+              child: const Text('SL'),
             ),
           )
         ],
       ),
       body: const Center(
-         child: Text('AvatarScreen'),
+         child: CircleAvatar(
+          maxRadius: 110,
+          backgroundImage: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Stan_Lee_by_Gage_Skidmore_3.jpg/640px-Stan_Lee_by_Gage_Skidmore_3.jpg'),
+         ),
       ),
     );
   }
